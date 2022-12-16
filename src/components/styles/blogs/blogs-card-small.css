@@ -10,6 +10,7 @@
 .blogs-card-small:hover
 {
     box-shadow: 0.2rem 0.18rem 1rem 0.25rem #888888e3;
+    transform: scale(1.1);
 }
 .blogs-image
 {
@@ -38,5 +39,6 @@
 {
     background-color: black;
     color: #39FF14;
+    transform: scale(1.05);
 
 }
