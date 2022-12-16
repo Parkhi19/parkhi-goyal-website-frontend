@@ -1,0 +1,20 @@
+.blogs-card-small
+{
+    margin-bottom: 2rem;
+    border-radius: 1rem;
+    padding: 1rem;
+    transition: all 300ms;
+    cursor: pointer;
+    box-shadow: 0.2rem 0.18rem 1rem 0.25rem #8888884a;
+}
+.blogs-card-small:hover
+{
+    box-shadow: 0.2rem 0.18rem 1rem 0.25rem #888888e3;
+}
+.blogs-image
+{
+    height: 20rem;
+    width:20rem;
+    object-fit: cover;
+    border-radius: 1rem;
+}
