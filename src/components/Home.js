@@ -29,6 +29,15 @@ export default function Home() {
             <BlogsCardSmall></BlogsCardSmall>
             <BlogsCardSmall></BlogsCardSmall>
         </div>
+        <div className='all-blogs-button-container d-flex'>
+            <button className='show-all-blogs-arrow d-flex'>
+                <p>Show More</p>
+                <i className="fa-solid fa-chevron-right xl "></i>
+            </button>
+
+
+        </div>
+
     </div>
   )
 }

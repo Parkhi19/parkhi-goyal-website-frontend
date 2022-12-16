@@ -18,3 +18,25 @@
     object-fit: cover;
     border-radius: 1rem;
 }
+.all-blogs-button-container
+{
+    justify-content: end !important;
+    margin: 0 2rem;
+}
+.show-all-blogs-arrow
+{
+    color: black;
+    padding: 0.9rem 1.6rem;
+    border: 0.1rem solid #39FF14;
+    border-radius:3rem;
+    box-shadow: 0 0 1rem 0.25rem #c2c2c263;
+    transition: all 300ms;
+    cursor: pointer;
+
+}
+.show-all-blogs-arrow:hover
+{
+    background-color: black;
+    color: #39FF14;
+
+}
