@@ -1,0 +1,36 @@
+footer{
+    background-color: #39FF14;
+    margin-top: 1.5rem;
+    padding: 2rem;
+}
+.icons-container
+{
+    width: fit-content;
+    margin:auto;
+}
+.footer-icon
+{
+    color: black;
+    border:1px solid black;
+    border-radius:50%;
+    font-size: 1.5rem;
+    margin: 0.6rem 0.9rem;
+    padding: 0.5em;
+    transition: all 300ms;
+}
+.footer-icon:hover
+{
+    background-color: black;
+    color: white;
+    transform: scale(1.1);
+}
+
+.footer-start-line
+{
+    margin-bottom: 0.6rem;
+}
+.footer-end-line
+{
+    margin-top: 0.8rem;
+
+}
