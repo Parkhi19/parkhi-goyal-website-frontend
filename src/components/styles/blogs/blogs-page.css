@@ -1,0 +1,19 @@
+.blog-item-container
+{
+    justify-content: center !important;
+}
+body
+{
+    background-color: black;
+}
+.blog-heading
+{
+    margin: 1.5rem;
+    color: purple;
+}
+.blog-images
+{
+    height: fit-content;
+    width: 25vw;
+    object-fit: cover;
+}
