@@ -1,10 +1,25 @@
-import React from 'react'
+import React, {useEffect, useState} from 'react'
 import './styles/home/header.css';
 import './styles/home/blogs.css'
 import BlogsCard from "./blogs/BlogsCard";
 import {Link} from "react-router-dom";
 
 export default function Home() {
+    const [allBlogs, setAllBlogs] = useState([])
+    useEffect(() => {
+        fetch('http://127.0.0.1:5000/get/all-blogs')
+            .then(res => res.json())
+            .then((data) => {
+                setAllBlogs(
+                    data.data.sort(
+                        function (a, b) {
+                            return b.timeStamp - a.timeStamp
+                        }
+                    )
+                )
+            })
+    }, [])
+
     return (
         <div>
             <header>
@@ -28,9 +43,9 @@ export default function Home() {
                 <h1 className='blogs-container-heading'>From my Desk</h1>
             </div>
             <div className='blogs-post-container d-flex'>
-                <BlogsCard isOnBlogsPage={false}></BlogsCard>
-                <BlogsCard isOnBlogsPage={false}></BlogsCard>
-                <BlogsCard isOnBlogsPage={false}></BlogsCard>
+                {allBlogs.map((blog) => {
+                    return <BlogsCard key={blog.id} isOnBlogsPage={false} blog={blog}></BlogsCard>
+                })}
             </div>
             <Link to="/blogs" className='all-blogs-button-container d-flex'>
                 <button className='show-all-blogs-arrow d-flex'>
