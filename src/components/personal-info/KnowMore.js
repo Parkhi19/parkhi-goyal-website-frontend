@@ -1,8 +1,9 @@
-import React from "react";
+import React, {useEffect, useState} from "react";
 import animationData from "../assets/knowMore.json"
 import Lottie from "react-lottie"
 import'../styles/home/knowMore.css'
 export default function KnowMore(){
+    const[knowMoreContent, setKnowMoreContent] = useState([])
     const defaultOptions = {
         loop: true,
         autoplay: true,
@@ -11,27 +12,22 @@ export default function KnowMore(){
             preserveAspectRatio: "xMidYMid slice"
         }
     };
+  useEffect(()=>{
+      fetch('http://127.0.0.1:5000/get/know-more-content')
+          .then(res=> res.json())
+          .then((data) =>
+          {
+              setKnowMoreContent(
+                  data.data.paragraphs
+              )
+          })
+      },[]
+  )
+
 return(
         <div>
             <div className="know-more-container d-flex">
-                <div className="know-more-content">
-                    <p>I love murdering people who visit my websites.iiiiiiiiiiiiiiiiiiiiiiiii</p>
-                    <p>sacdv bgf</p>
-                    <p>dxfcgvbhjnkm</p>
-                    <p>dcfgbhjnkm,l</p>
-                    <p>sacdv bgf</p>
-                    <p>dxfcgvbhjnkm</p>
-                    <p>dcfgbhjnkm,l</p>
-                    <p>sacdv bgf</p>
-                    <p>dxfcgvbhjnkm</p>
-                    <p>dcfgbhjnkm,l</p>
-                    <p>dcfgbhjnkm,l</p>
-                <p>sacdv bgf</p>
-                <p>dxfcgvbhjnkm</p>
-                <p>dcfgbhjnkm,l</p>
-                    <p>dcfgbhjnkm,l</p>
-                <p>sacdv bgf</p>
-                </div>
+                <p>m shuruaat hu</p>
                 <div className="know-more-animation">
                     <Lottie
                         options={defaultOptions}
@@ -39,7 +35,13 @@ return(
                         width={400}/>
                 </div>
             </div>
-
+            <div className="know-more-content">
+                {knowMoreContent.map((content) =>
+                    {
+                        return <p>{content}</p>
+                    }
+                )}
+            </div>
         </div>
 
 
