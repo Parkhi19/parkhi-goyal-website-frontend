@@ -3,9 +3,13 @@ import './styles/home/header.css';
 import './styles/home/blogs.css'
 import BlogsCard from "./blogs/BlogsCard";
 import {Link} from "react-router-dom";
+import PersonalInfo from "../model/PersonalInfo";
+
 
 export default function Home() {
     const [allBlogs, setAllBlogs] = useState([])
+    const [personalInfo, setPersonalInfo] = useState(PersonalInfo.default())
+
     useEffect(() => {
         fetch('http://127.0.0.1:5000/get/all-blogs')
             .then(res => res.json())
@@ -18,6 +22,12 @@ export default function Home() {
                     )
                 )
             })
+
+        fetch('http://127.0.0.1:5000/get/personal-info')
+            .then(res => res.json())
+            .then((data) => {
+                setPersonalInfo(data.data)
+            })
     }, [])
 
     return (
@@ -28,12 +38,12 @@ export default function Home() {
                 </div>
                 <div className='main-header-container d-flex'>
                     <div className='about-content-container'>
-                        <p className='about-content'> lorem pojilhucgvxb kjhbgvcvbnjkl</p>
-                        <a href='https://google.com' className='about-know-more'>Know More</a>
+                        <p className='about-content'>{personalInfo.aboutHome}</p>
+                        <Link to ='/about' className='about-know-more'>Know More</Link>
                     </div>
                     <div className='profile-photo-container'>
                         <img
-                            src='https://images.unsplash.com/photo-1596573340087-3e3e07e5c661?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80'
+                            src={personalInfo.photoUrl}
                             className='profile-photo'></img>
 
                     </div>

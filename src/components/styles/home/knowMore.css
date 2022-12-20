@@ -1,0 +1,11 @@
+.know-more-container
+{
+    justify-content: space-around !important;
+    flex-wrap: wrap-reverse;
+}
+
+.know-more-content
+{
+    margin:5rem;
+    color: white;
+}
