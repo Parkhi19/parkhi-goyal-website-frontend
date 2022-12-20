@@ -17,8 +17,7 @@ export default function Blogs ()
     }, [])
 
     return(
-        <div>
-            <div className='blog-heading'><h2>Parkhi</h2></div>
+        <div className='blogs-background'>
             <div className='blog-item-container d-flex'>
                 <div className='blog-image-container'>
                     {allBlogs.map((blog) => {

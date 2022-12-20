@@ -3,6 +3,7 @@ body{
 }
 .blogs-card
 {
+    background: #00000050;
     color:white;
     margin-bottom: 2rem;
     border-radius: 1rem;

@@ -3,3 +3,6 @@
     margin: 2rem;
     flex-direction: column;
 }
+.blogs-post-container {
+    padding: 2rem;
+}

@@ -2,10 +2,12 @@
 {
     justify-content: center !important;
 }
-body
+.blogs-background
 {
-    background-color: black;
+    background: url("../../../../public/blogs-background.png") no-repeat;
+
 }
+
 .blog-heading
 {
     margin: 1.5rem;

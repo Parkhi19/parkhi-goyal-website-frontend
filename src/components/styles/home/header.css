@@ -3,6 +3,16 @@ header{
     min-height: 80vh;
     width: 100vw;
 }
+.home-name
+{
+    transition: all 300ms;
+}
+.home-name:hover
+{
+    color:#39FF14;
+    cursor: none;
+    transform: scale(1.01);
+}
 .heading
 {
     color: white;
@@ -17,6 +27,10 @@ header{
 .about-content-container
 {
     color: white;
+    max-width: 40%;
+}
+.about-content {
+    margin-bottom: 0.5rem;
 }
 .profile-photo
 {
@@ -37,4 +51,14 @@ header{
 .about-know-more:hover
 {
 color:rgba(57, 255, 20, 0.6)
+}
+
+@media (max-width: 600px) {
+    .about-content-container {
+        max-width: 80%;
+    }
+    .profile-photo {
+        width: 15rem;
+        height: 15rem;
+    }
 }

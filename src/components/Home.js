@@ -34,7 +34,7 @@ export default function Home() {
         <div>
             <header>
                 <div className='heading'>
-                    <h2>Parkhi Goyal</h2>
+                    <h2 className="home-name">Parkhi Goyal</h2>
                 </div>
                 <div className='main-header-container d-flex'>
                     <div className='about-content-container'>
