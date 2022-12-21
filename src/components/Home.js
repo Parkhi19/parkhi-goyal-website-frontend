@@ -53,6 +53,9 @@ export default function Home() {
                 <h1 className='blogs-container-heading'>From my Desk</h1>
             </div>
             <div className='blogs-post-container d-flex'>
+                {/*<BlogsCard></BlogsCard>*/}
+                {/*<BlogsCard></BlogsCard>*/}
+                {/*<BlogsCard></BlogsCard>*/}
                 {allBlogs.map((blog) => {
                     return <BlogsCard key={blog.id} isOnBlogsPage={false} blog={blog}></BlogsCard>
                 })}

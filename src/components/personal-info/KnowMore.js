@@ -27,7 +27,7 @@ export default function KnowMore(){
 return(
         <div>
             <div className="know-more-container d-flex">
-                <p>m shuruaat hu</p>
+                <p className="know-more-static">My current professional interests broadly include data structures, algorithms, web development, Android development, and competitive programming. Simply put, I am currently focused to create and carve out the best possible software engineer out of myself and trying things to single out the best-suited domain for me.</p>
                 <div className="know-more-animation">
                     <Lottie
                         options={defaultOptions}
