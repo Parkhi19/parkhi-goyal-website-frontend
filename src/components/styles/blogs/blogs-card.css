@@ -69,11 +69,6 @@ body{
     background-color: white;
 
 }
-.blogs-post-container
-{
-    flex-direction: row;
-}
-
 @media (max-width: 700px) {
     .blogs-image-large
     {

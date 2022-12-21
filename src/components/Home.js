@@ -53,9 +53,6 @@ export default function Home() {
                 <h1 className='blogs-container-heading'>From my Desk</h1>
             </div>
             <div className='blogs-post-container d-flex'>
-                {/*<BlogsCard></BlogsCard>*/}
-                {/*<BlogsCard></BlogsCard>*/}
-                {/*<BlogsCard></BlogsCard>*/}
                 <div className="blogs-card d-flex">
                         <img src="https://firebasestorage.googleapis.com/v0/b/personal-website-8e475.appspot.com/o/Blog%20content%2Fblog6.png?alt=media&token=6ffe6c09-c379-479e-8309-13dfc7f505ff"/>
                 </div>
