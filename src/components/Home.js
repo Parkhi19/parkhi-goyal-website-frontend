@@ -56,9 +56,18 @@ export default function Home() {
                 {/*<BlogsCard></BlogsCard>*/}
                 {/*<BlogsCard></BlogsCard>*/}
                 {/*<BlogsCard></BlogsCard>*/}
-                {allBlogs.map((blog) => {
-                    return <BlogsCard key={blog.id} isOnBlogsPage={false} blog={blog}></BlogsCard>
-                })}
+                <div className="blogs-card d-flex">
+                        <img src="https://firebasestorage.googleapis.com/v0/b/personal-website-8e475.appspot.com/o/Blog%20content%2Fblog6.png?alt=media&token=6ffe6c09-c379-479e-8309-13dfc7f505ff"/>
+                </div>
+                <div className="blogs-card d-flex">
+                    <img src="https://firebasestorage.googleapis.com/v0/b/personal-website-8e475.appspot.com/o/Blog%20content%2Fblog3.png?alt=media&token=4216c977-26f4-447d-871a-7d86aac26849"/>
+                </div>
+                <div className="blogs-card d-flex">
+                    <img src="https://firebasestorage.googleapis.com/v0/b/personal-website-8e475.appspot.com/o/Blog%20content%2Fblog2.png?alt=media&token=e3ae7861-b353-468e-9c41-3ab773115fb0"/>
+                </div>
+                {/*{allBlogs.map((blog) => {*/}
+                {/*    return <BlogsCard key={blog.id} isOnBlogsPage={false} blog={blog}></BlogsCard>*/}
+                {/*})}*/}
             </div>
             <Link to="/blogs" className='all-blogs-button-container d-flex'>
                 <button className='show-all-blogs-arrow d-flex'>

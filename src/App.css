@@ -6,6 +6,10 @@
 }
 @import url('https://fonts.googleapis.com/css2?family=Julius+Sans+One&display=swap');
 
+::selection {
+  color: black;
+  background-color: #FFFF00;
+}
 .d-flex
 {
   display: flex;
