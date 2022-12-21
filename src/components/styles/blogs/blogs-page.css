@@ -2,10 +2,9 @@
 {
     justify-content: center !important;
 }
-.blogs-background
-{
+.blogs-background {
     background: url("../../../../public/blogs-background.png") no-repeat;
-
+    background-attachment: fixed;
 }
 
 .blog-heading
