@@ -1,0 +1,34 @@
+.top-btn{
+    color:white;
+    font-size:1.5rem;
+
+}
+.fa-arrow-up{
+    background-color: #39FF14;
+    color: black;
+    border:1px solid black;
+    border-radius:80%;
+    font-size: 1.5rem;
+    margin: 0.6rem 0.9rem;
+    padding: 0.5em;
+    transition: all 300ms;
+}
+--icon
+{
+    animation: goToTop 1.2s linear infinite alternate-reverse;
+}
+@keyframes goToTop {
+    0%{
+        tranform : translateY(-0.5rem);
+    }
+    100%{
+        tranform:translateY(1rem);
+    }
+
+}
+.fa-arrow-up:hover{
+    background-color: white;
+    color: black;
+    transform: scale(1.1);
+    cursor: pointer;
+}
