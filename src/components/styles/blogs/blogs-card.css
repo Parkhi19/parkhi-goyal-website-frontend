@@ -20,7 +20,6 @@ body{
 .blogs-container-heading:hover
 {
     color: #39FF14;
-    transform: scale(1.1);
     cursor: none;
     font-weight: bold;
 }
